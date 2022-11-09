@@ -4,3 +4,11 @@
             A = stroka.Split(' ');
             var result = new string[A .Length];
             var realSize = 0;
+  foreach (var value in A )
+            {
+                if (value.Length <= 3)
+                {
+                    result[realSize] = value;
+                    realSize++;
+                }
+            }
